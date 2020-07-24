@@ -11,10 +11,14 @@ class Page3 extends React.Component {
         <TouchableOpacity style={pageStyle.button}>
           <Text>Geri Dön</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={pageStyle.button}>
+        <TouchableOpacity
+          style={pageStyle.button}
+          onPress={() => this.props.navigation.navigate('P1')}>
           <Text>SAYFA 1 E GIT</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={pageStyle.button}>
+        <TouchableOpacity
+          style={pageStyle.button}
+          onPress={() => this.props.navigation.navigate('P2')}>
           <Text>SAYFA 2 E GIT</Text>
         </TouchableOpacity>
       </View>
